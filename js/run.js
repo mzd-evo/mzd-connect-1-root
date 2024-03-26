@@ -58,9 +58,9 @@
         window.XSStoggle.remove()
     }
 
-    function setXSSRegin(view) {
+    function setXSSRegion(view) {
         framework.localize._currentRegion = 'Region_Europe'
-        xssLog(view, 'regin Region_Europe')
+        xssLog(view, 'region Region_Europe')
     }
 
     function action(parent, name, cb, view) {
@@ -86,7 +86,7 @@
 
         action(XSSactions, 'Open terminal', terminal, view)
         action(XSSactions, 'Ui logs', UIxssLog, view)
-        action(XSSactions, 'Set UI EN region', setXSSRegin, view)
+        action(XSSactions, 'Set UI region: EU', setXSSRegion, view)
         action(XSSactions, 'Restart', restart, view)
         action(XSSactions, 'Destroy', xssDestroy, view)
 
